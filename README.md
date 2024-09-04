@@ -224,4 +224,8 @@ Let's break down the C program step by step, understanding each component and it
     
      + 0: Disables the internal pull-up resistor.
      
-     + 1: Enables the internal pull-up resistor.    
+     + 1: Enables the internal pull-up resistor.
+    
+ 
+![image](https://github.com/user-attachments/assets/4d853ad2-8803-4063-85e2-275c5ff8a3ba)
+
