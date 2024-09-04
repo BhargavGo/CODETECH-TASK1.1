@@ -58,35 +58,44 @@ Embedded C allows developers to write their own libraries, optimizing them for s
 Let's break down the C program step by step, understanding each component and its role in controlling the LED.
 
 1. Including Necessary Headers
+   
   #include <avr/io.h>
-#include <util/delay.h>
+  
+  #include <util/delay.h>
 
 - <avr/io.h>:
 
     + Purpose: Provides definitions for the Input/Output registers specific to AVR microcontrollers.
+      
     + Usage: Allows direct manipulation of hardware registers like DDRB (Data Direction Register for Port B) and PORTB (Data Register for Port B).
-<util/delay.h>:
+      
+- <util/delay.h>:
 
-Purpose: Contains functions for creating delays, such as _delay_ms().
-Usage: Facilitates pausing the program execution for a specified amount of time, essential for creating visible LED blinking intervals.
+    + Purpose: Contains functions for creating delays, such as _delay_ms().
+      
+    + Usage: Facilitates pausing the program execution for a specified amount of time, essential for creating visible LED blinking intervals.
+      
 2. Defining the LED Pin
-c
-Copy code
-#define LED_PIN PB5
+
+    #define LED_PIN PB5
+
 #define LED_PIN PB5:
-Purpose: Creates a macro named LED_PIN representing PB5 (Pin 5 of Port B).
-Explanation: On an Arduino Uno (which uses an ATmega328P microcontroller), the built-in LED is connected to PB5, which corresponds to digital pin 13. Using a macro enhances code readability and maintainability.
+ 
+   + Purpose: Creates a macro named LED_PIN representing PB5 (Pin 5 of Port B).
+
+   + Explanation: On an Arduino Uno (which uses an ATmega328P microcontroller), the built-in LED is connected to PB5, which corresponds to digital pin 13. Using a macro enhances code readability and maintainability.
+     
 3. The main Function
-c
-Copy code
-int main(void) {
-    // Initialization and main loop
-    return 0;
-}
-int main(void):
+
+   int main(void) {
+      // Initialization and main loop
+      return 0;
+   }
+
+ int main(void):
 Purpose: The entry point of the C program.
 Usage: In embedded systems, main typically contains initialization code and an infinite loop to keep the program running indefinitely.
-4. Initializing the LED Pin as Output
+3. Initializing the LED Pin as Output
 c
 Copy code
 DDRB |= (1 << LED_PIN);  // Set PB5 as output by setting the 5th bit of DDRB
