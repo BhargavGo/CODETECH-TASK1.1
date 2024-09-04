@@ -214,14 +214,14 @@ Let's break down the C program step by step, understanding each component and it
      
  - Bit Value:
    
-  + For Output Pins:
+   + For Output Pins:
    
-   + 0: Sets the pin to low voltage (0V).
+     + 0: Sets the pin to low voltage (0V).
      
-   + 1: Sets the pin to high voltage (Vcc, typically 5V or 3.3V).
+     + 1: Sets the pin to high voltage (Vcc, typically 5V or 3.3V).
      
-  + For Input Pins:
+   + For Input Pins:
     
-   + 0: Disables the internal pull-up resistor.
+     + 0: Disables the internal pull-up resistor.
      
-   + 1: Enables the internal pull-up resistor.    
+     + 1: Enables the internal pull-up resistor.    
