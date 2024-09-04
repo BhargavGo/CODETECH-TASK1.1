@@ -227,5 +227,6 @@ Let's break down the C program step by step, understanding each component and it
      + 1: Enables the internal pull-up resistor.
     
  
-![image](https://github.com/user-attachments/assets/4d853ad2-8803-4063-85e2-275c5ff8a3ba)
+![Screenshot (8)](https://github.com/user-attachments/assets/a9459846-ca0c-4c17-bea2-a8b5b3ab9a98)
+
 
