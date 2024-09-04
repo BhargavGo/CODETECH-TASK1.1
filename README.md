@@ -12,6 +12,6 @@ Mentor : NEELA SANTOSH KUMAR
 
 # **Overview of the Project**
 
-## **Project : LED BLINKING WITH ARDUINO**
+## **Project : LED BLINKING WITH ARDUINO USING EMBEDDED C PROGRAMMING**
 
 ### **Objective**
