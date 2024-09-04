@@ -54,7 +54,7 @@ As projects grow in complexity, Embedded C provides better scalability, allowing
 
 Embedded C allows developers to write their own libraries, optimizing them for specific hardware, which is not as straightforward in the Arduino environment.
 
-**Detailed Explanation**
+### **Detailed Explanation**
 Let's break down the C program step by step, understanding each component and its role in controlling the LED.
 
 1. Including Necessary Headers
@@ -191,7 +191,7 @@ Let's break down the C program step by step, understanding each component and it
     
    - After turning the LED off and introducing another delay, the loop reiterates, turning the LED back on, and so forth. This creates a continuous blinking effect with 1-second intervals.
   
-**Understanding Microcontroller Registers**
+### **Understanding Microcontroller Registers**
 
  To grasp why we manipulate DDRB and PORTB, it's essential to understand microcontroller I/O registers.
 
