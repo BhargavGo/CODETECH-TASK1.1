@@ -190,3 +190,38 @@ Let's break down the C program step by step, understanding each component and it
 9. Repeating the Cycle
     
    - After turning the LED off and introducing another delay, the loop reiterates, turning the LED back on, and so forth. This creates a continuous blinking effect with 1-second intervals.
+  
+**Understanding Microcontroller Registers**
+
+ To grasp why we manipulate DDRB and PORTB, it's essential to understand microcontroller I/O registers.
+
+ - Data Direction Register (DDR)
+   
+   + Role: Configures each pin of a port as input or output.
+     
+   + Example: DDRB for Port B on AVR microcontrollers.
+     
+ - Bit Value:
+   
+   + 0: Configures the pin as input.
+     
+   + 1: Configures the pin as output.
+     
+ - Data Register (PORT)
+   + Role: Controls the voltage level on output pins or activates internal pull-up resistors on input pins.
+     
+   + Example: PORTB for Port B on AVR microcontrollers.
+     
+ - Bit Value:
+   
+  + For Output Pins:
+   
+   + 0: Sets the pin to low voltage (0V).
+     
+   + 1: Sets the pin to high voltage (Vcc, typically 5V or 3.3V).
+     
+  + For Input Pins:
+    
+   + 0: Disables the internal pull-up resistor.
+     
+   + 1: Enables the internal pull-up resistor.    
