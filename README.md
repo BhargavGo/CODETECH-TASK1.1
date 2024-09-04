@@ -15,7 +15,7 @@ Mentor : NEELA SANTOSH KUMAR
 ## **Project : LED BLINKING WITH ARDUINO USING EMBEDDED C PROGRAMMING**
 
 ### **Objective**
-The primary objective of translating the Arduino-based program into Embedded C is to provide a more direct, efficient, and low-level control over the microcontroller's hardware resources. 
+The primary objective of translating the TASK1 (Arduino-based program) into Embedded C is to provide a more direct, efficient, and low-level control over the microcontroller's hardware resources. 
 
 This approach allows for:
 
