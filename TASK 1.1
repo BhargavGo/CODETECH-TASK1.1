@@ -1,0 +1,28 @@
+//TASK 1 Translating TO Embedded C  programming
+
+#include <avr/io.h>
+#include <util/delay.h>
+
+// Define the LED pin (PB5 corresponds to digital pin 13 on Arduino Uno)
+#define LED_PIN PB5
+
+int main(void) {
+    // 1. Initialize the LED pin as an output
+    DDRB |= (1 << LED_PIN);  // Set PB5 as output by setting the 5th bit of DDRB
+
+    while (1) { // Infinite loop
+        // 2. Turn the LED on
+        PORTB |= (1 << LED_PIN);   // Set PB5 high
+
+        // 3. Wait for 1 second
+        _delay_ms(200);            // Delay for 1000 milliseconds
+
+        // 4. Turn the LED off
+        PORTB &= ~(1 << LED_PIN);  // Set PB5 low
+
+        // 5. Wait for 1 second
+        _delay_ms(200);            // Delay for 1000 milliseconds
+    }
+
+    return 0; // This line is never reached
+}
