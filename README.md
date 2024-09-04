@@ -59,9 +59,9 @@ Let's break down the C program step by step, understanding each component and it
 
 1. Including Necessary Headers
    
-  #include <avr/io.h>
+     #include <avr/io.h>
   
-  #include <util/delay.h>
+     #include <util/delay.h>
 
 - <avr/io.h>:
 
